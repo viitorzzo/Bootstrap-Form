@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <main class="w-100 m-auto form-container">
+        <form>
+            <img src="./img/twitch.svg" alt="Logo Twitch" class="mb-2" height="57" width="72">
+            <h1 class="h3 mb-3 fw-bold">Registre-se</h1>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="nomeInput" placeholder="Insira seu Nome">
+                <label for="nomeInput">Nome</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="emailInput" placeholder="Insira seu Email">
+                <label for="emailInput">Email</label>
+            </div>
+            <div class="form-floating">
+                <input type="tel" class="form-control" id="telefoneInput" placeholder="Insira seu Telefone">
+                <label for="telefoneInput">Telefone</label>
+            </div>
+            <div class="form-check text-start ny-3 mt-2">
+               <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">Salvar Dados</label>
+            </div>
+            <button class="btn btn-primary w-100 py-2 mt-2">
+                Registrar
+            </button>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefoneInput').mask('(00) 0000-0000');
+        });
+    </script>
+</body>
+</html>
